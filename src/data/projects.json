@@ -5,7 +5,7 @@
       "title": "Instagram Uploader",
       "description": "JavaScript app that uses Contentful's API to schedule Instagram uploads via CRON. Includes mail parser error handling and runs on Heroku.",
       "technologies": ["JavaScript", "Axios", "CRON", "Express", "Heroku", "Contentful"],
-      "image": "src/assets/images/projects/instagram-uploader.png",
+      "image": "public/images/projects/instagram-uploader.png",
       "github": "https://github.com/yourusername/instagram-uploader",
       "demo": ""
     },
@@ -13,7 +13,7 @@
       "title": "Bible Reader Web App",
       "description": "React app fetching Bible data from external APIs using state management, React Hooks, and React Router.",
       "technologies": ["React", "Axios", "CSS Flexbox", "Netlify"],
-      "image": "src/assets/images/projects/bible-reader.jpg",
+      "image": "public/images/projects/bible-reader.jpg",
       "github": "https://github.com/yourusername/bible-reader",
       "demo": "https://biblereader.netlify.app/"
     },
@@ -21,7 +21,7 @@
       "title": "Roll the Dice App",
       "description": "Vanilla JavaScript budget app calculating total income and expenses. Built without libraries, using lexical scoping and closures.",
       "technologies": ["JavaScript", "HTML", "CSS"],
-      "image": "src/assets/images/projects/roll-the-dice-app.png",
+      "image": "public/images/projects/roll-the-dice-app.png",
       "github": "https://github.com/yourusername/roll-the-dice-game.png",
       "demo": "http://roll-the-dice-game.netlify.app/"
     }
