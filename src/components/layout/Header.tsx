@@ -77,7 +77,7 @@ const Header = ({ toggleTheme, currentTheme }: HeaderProps) => {
             </Link>
           ))}
           <Button3D
-            href="/src/assets/resume.pdf"
+            href="/resume.pdf"
             variant={buttonVariant}
             size="sm"
           >
@@ -103,11 +103,9 @@ const Header = ({ toggleTheme, currentTheme }: HeaderProps) => {
 
         {/* Mobile Navigation Button */}
         <div className="flex items-center md:hidden">
-          <Button3D
+          <button
             onClick={toggleTheme}
-            variant="secondary"
-            size="sm"
-            className="p-2 mr-2"
+             className="p-2 mr-2"
           >
             {currentTheme === 'dark' ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -118,11 +116,9 @@ const Header = ({ toggleTheme, currentTheme }: HeaderProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
               </svg>
             )}
-          </Button3D>
-          <Button3D
+          </button>
+          <button
             onClick={toggleMenu}
-            variant="secondary"
-            size="sm"
             className="p-2"
           >
             {isMenuOpen ? (
@@ -134,7 +130,7 @@ const Header = ({ toggleTheme, currentTheme }: HeaderProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
-          </Button3D>
+          </button>
         </div>
       </div>
 
@@ -163,14 +159,15 @@ const Header = ({ toggleTheme, currentTheme }: HeaderProps) => {
                 {link.name}
               </Link>
             ))}
-            <Button3D
-              href="/src/assets/resume.pdf"
-              variant="accent"
-              size="sm"
+            <a
+              href="/resume.pdf"
               className="mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Resume
-            </Button3D>
+            </a>
+
           </div>
         </div>
       )}
