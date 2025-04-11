@@ -1,0 +1,35 @@
+{
+  "title": "ABOUT ME",
+  "content": [
+    "I'm Michael — a software engineer and creative who loves building tools, interfaces, and experiences that feel intuitive, meaningful, and beautifully made.",
+    "After graduating as a mechanical engineer, I pivoted into tech and never looked back. I've worked across education, sustainability, and e-commerce — building everything from multi-tenant dashboards for smart heating systems to digital platforms for renowned design institutions.",
+    "Outside of work, I write and produce music. I like to think of code and music as structured chaos with room for beauty."
+  ],
+  "skills": {
+    "title": "Technologies I work with:",
+    "list": [
+      "JavaScript",
+      "PHP",
+      "TypeScript",
+      "React",
+      "Redux",
+      "NodeJS",
+      "RESTful API",
+      "GraphQL",
+      "MySQL",
+      "SASS",
+      "Docker",
+      "AWS",
+      "Magento 2",
+      "Linux VPS",
+      "WordPress",
+      "HTML5",
+      "CSS",
+      "Git",
+      "Axios",
+      "Heroku",
+      "CRON"
+    ]
+  }
+}
+

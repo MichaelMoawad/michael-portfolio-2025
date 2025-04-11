@@ -1,0 +1,152 @@
+.pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.shadow {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    rgb(105, 0, 35) 8%,
+    rgb(105, 0, 35) 8%,      
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.front {
+  display: block;
+  position: relative;
+  border-radius: 12px;
+  color: white;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.pushable:hover .front {
+  transform: translateY(-5px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.pushable:hover .shadow {
+  transform: translateY(3px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Variant-specific edge colors */
+.pushable[data-variant="primary"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(210deg 100% 16%) 0%,
+    hsl(210deg 100% 32%) 8%,
+    hsl(210deg 100% 32%) 92%,
+    hsl(210deg 100% 16%) 100%
+  );
+}
+
+.pushable[data-variant="secondary"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(0deg 0% 16%) 0%,
+    hsl(0deg 0% 32%) 8%,
+    hsl(0deg 0% 32%) 92%,
+    hsl(0deg 0% 16%) 100%
+  );
+}
+
+.pushable[data-variant="accent"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.pushable[data-variant="accentLight"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(340deg 80% 16%) 0%,
+    hsl(340deg 80% 32%) 8%,
+    hsl(340deg 80% 32%) 92%,
+    hsl(340deg 80% 16%) 100%
+  );
+}
+
+.pushable[data-variant="github"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(210deg 10% 10%) 0%,
+    hsl(210deg 10% 20%) 8%,
+    hsl(210deg 10% 20%) 92%,
+    hsl(210deg 10% 10%) 100%
+  );
+}
+
+.pushable[data-variant="linkedin"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(201deg 100% 25%) 0%,
+    hsl(201deg 100% 35%) 8%,
+    hsl(201deg 100% 35%) 92%,
+    hsl(201deg 100% 25%) 100%
+  );
+}
+
+.pushable[data-variant="email"] .edge {
+  background: linear-gradient(
+    to left,
+    hsl(6deg 71% 45%) 0%,
+    hsl(6deg 71% 55%) 8%,
+    hsl(6deg 71% 55%) 92%,
+    hsl(6deg 71% 45%) 100%
+  );
+}

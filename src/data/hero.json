@@ -1,0 +1,10 @@
+{
+  "greeting": "Hi, my name is",
+  "name": "Michael Moawad",
+  "title": "I build exceptional digital experiences.",
+  "description": "I'm a software engineer and creative who loves building tools, interfaces, and experiences that feel intuitive, meaningful, and beautifully made. Currently, I'm focused on building accessible, human-centered products.",
+  "cta": {
+    "work": "View My Work",
+    "contact": "Contact Me"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "title": "EXPERIENCE",
+  "jobs": [
+    {
+      "company": "Evinox - Sustainable Heat Networks",
+      "role": "Software Developer",
+      "period": "June 2023 – Present",
+      "description": [
+        "Employed Redux for seamless data flow and synchronization, handling complex states like transactions, diagnostics, and authentication.",
+        "Reduced AWS monthly service costs by 80% through code refactoring and database indexing.",
+        "Created pipelines to establish a CI/CD environment using Lambda and EventBridge for scheduled tasks.",
+        "Developed device performance graphs and data visualisations to identify critical errors in heat flow, increasing operational efficiency.",
+        "Implemented robust user authentication with support for multiple profiles per account, improving security and usability."
+      ],
+      "technologies": ["React", "Redux", "NodeJS", "C#", ".NET", "SQL", "AWS", "EventBridge"]
+    },
+    {
+      "company": "Architectural Association",
+      "role": "Front End Developer",
+      "period": "Nov 2020 – June 2023",
+      "description": [
+        "Built reusable React components to dynamically fetch and render content via Statamic CMS, reducing publishing time significantly.",
+        "Replaced over 500 lines of hard-coded content by designing logic to dynamically map and display API data.",
+        "Used MySQL, PHP, and Axios with NodeJS to manipulate and display JSON data effectively.",
+        "Improved testing workflows through Test-Driven Development (TDD) using tools like Lighthouse and Inspector."
+      ],
+      "technologies": ["React", "JavaScript", "PHP", "NodeJS", "MySQL", "Axios", "Statamic", "Lighthouse"]
+    },
+    {
+      "company": "Cumi Ltd (Contract)",
+      "role": "E-Commerce Developer",
+      "period": "Jul 2020 – Nov 2020",
+      "description": [
+        "Managed Linux VPS with Bash to adjust memory allocation and maintain database integrity during deployment.",
+        "Developed responsive frontend blocks using HTML5, CSS3, and Magento 2 CMS.",
+        "Improved site load speed through caching, compression, and asset delivery optimization."
+      ],
+      "technologies": ["Magento 2", "HTML5", "CSS3", "Bash", "Linux VPS"]
+    },
+    {
+      "company": "Coptic Lawyers Worldwide (Contract)",
+      "role": "Website Developer",
+      "period": "Oct 2020 – Nov 2020",
+      "description": [
+        "Designed and developed a fully responsive site using React Styled Components, CSS Grid, and Flexbox.",
+        "Used Kanban methodology to fix bugs and implement improvements, enabling fast-paced CI/CD deployment cycles."
+      ],
+      "technologies": ["React", "Styled Components", "CSS Grid", "Flexbox", "CI/CD"]
+    }
+  ]
+}
