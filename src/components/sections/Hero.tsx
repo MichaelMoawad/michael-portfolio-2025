@@ -61,7 +61,7 @@ const Hero = ({ currentTheme }: HeroProps) => {
           <div className={`md:col-span-2 flex justify-center md:justify-end fade-in-bottom delay-400 ${isVisible ? 'is-visible' : ''}`}>
           <div className="relative aspect-square w-64 sm:w-72 md:w-80 lg:w-96 rounded-full overflow-hidden border-4 border-theme mt-8 sm:mt-10">
           <img
-              src="public/images/headshot.jpg"
+              src="/images/headshot.jpg"
               alt="Profile"
               className="absolute inset-0 w-full h-full object-cover rounded-full"
             />
