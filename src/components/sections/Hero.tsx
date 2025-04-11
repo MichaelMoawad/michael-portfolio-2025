@@ -1,4 +1,3 @@
-import { Link } from 'react-scroll';
 import { useInView } from '../../hooks/useInView';
 import heroData from '../../data/hero.json';
 import linksData from '../../data/links.json';
