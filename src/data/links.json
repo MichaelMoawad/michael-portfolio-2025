@@ -5,6 +5,7 @@
     "email": "mailto:michaelmoawad1997@gmail.com"
   },
   "navigation": {
+    "experience": "#experience",
     "projects": "#projects",
     "contact": "#contact"
   }

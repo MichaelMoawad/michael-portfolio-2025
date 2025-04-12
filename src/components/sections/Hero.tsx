@@ -32,7 +32,7 @@ const Hero = ({ currentTheme }: HeroProps) => {
             <div className={`flex flex-wrap gap-4 pt-4 fade-in-bottom delay-400 ${isVisible ? 'is-visible' : ''}`}>
               <Button3D
                 onClick={() => {
-                  const element = document.getElementById(linksData.navigation.projects.replace('#', ''));
+                  const element = document.getElementById(linksData.navigation.experience.replace('#', ''));
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
