@@ -33,21 +33,25 @@ const Experience = () => {
   }, [activeTab]);
 
   return (
-    <section id="experience" className="section" ref={containerRef as React.RefObject<HTMLElement>}>
-      <div className="container-content">
-        <div className="space-y-12">
+    <section
+      id="experience"
+      className="section min-h-[80vh] max-h-[1400px] py-24 md:py-32 flex items-center"
+      ref={containerRef as React.RefObject<HTMLElement>}
+    >
+
+      <div className="container-content w-full">
+        <div className="space-y-12 max-w-7xl mx-auto">
           <div className={`flex items-center gap-4 fade-in-bottom ${isVisible ? 'is-visible' : ''}`}>
             <h2 className="section-title">{experienceData.title}</h2>
             <div className="h-px bg-border-tint flex-grow"></div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Tabs */}
+          <div className="flex flex-col md:flex-row gap-8 md:overflow-auto md:max-h-[calc(100vh-16rem)]">
+          {/* Tabs */}
             <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible md:min-w-[180px]">
               <div className="relative flex md:flex-col w-full border-b md:border-b-0 md:border-l border-border-tint">
-                {/* Animated indicator */}
                 <div className="hidden md:block tab-indicator" style={indicatorStyle} />
-                
+
                 {experienceData.jobs.map((job, index) => (
                   <button
                     key={index}
@@ -81,7 +85,7 @@ const Experience = () => {
                   </li>
                 ))}
               </ul>
-            
+
               {/* Technologies */}
               <div className="pt-4">
                 <h4 className="text-sm font-medium text-accent mb-3">Technologies</h4>
@@ -101,6 +105,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

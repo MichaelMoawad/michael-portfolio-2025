@@ -5,9 +5,13 @@ const About = () => {
   const [containerRef, isVisible] = useInView();
 
   return (
-    <section id="about" className="section" ref={containerRef as React.RefObject<HTMLElement>}>
-      <div className="container-content">
-        <div className="space-y-12">
+    <section
+      id="about"
+      ref={containerRef as React.RefObject<HTMLElement>}
+      className="section min-h-[80vh] max-h-[1400px] py-24 md:py-32 flex items-center"
+    >
+      <div className="container-content w-full">
+        <div className="space-y-12 max-w-7xl mx-auto">
           <div className={`flex items-center gap-4 fade-in-bottom ${isVisible ? 'is-visible' : ''}`}>
             <h2 className="section-title">{aboutData.title}</h2>
             <div className="h-px bg-border-tint flex-grow"></div>
@@ -17,7 +21,12 @@ const About = () => {
             {/* About Me Text */}
             <div className="md:col-span-2 space-y-6">
               {aboutData.content.map((paragraph, index) => (
-                <p key={index} className={`fade-in-bottom delay-${(index + 1) * 100} ${isVisible ? 'is-visible' : ''}`}>
+                <p
+                  key={index}
+                  className={`fade-in-bottom delay-${(index + 1) * 100} ${
+                    isVisible ? 'is-visible' : ''
+                  }`}
+                >
                   {paragraph}
                 </p>
               ))}
@@ -39,6 +48,7 @@ const About = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

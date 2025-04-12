@@ -29,7 +29,7 @@ const Hero = ({ currentTheme }: HeroProps) => {
             <p className={`max-w-lg fade-in-bottom delay-300 ${isVisible ? 'is-visible' : ''}`}>
               {heroData.description}
             </p>
-            <div className={`flex flex-wrap gap-4 pt-4 fade-in-bottom delay-400 ${isVisible ? 'is-visible' : ''}`}>
+            <div className={`flex flex-wrap gap-4 pt-4 justify-center md:justify-start fade-in-bottom delay-400 ${isVisible ? 'is-visible' : ''}`}>
               <Button3D
                 onClick={() => {
                   const element = document.getElementById(linksData.navigation.experience.replace('#', ''));
