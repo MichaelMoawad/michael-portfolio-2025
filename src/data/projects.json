@@ -2,12 +2,12 @@
   "title": "PROJECTS",
   "projects": [
     {
-      "title": "Instagram Uploader",
-      "description": "JavaScript app that uses Contentful's API to schedule Instagram uploads via CRON. Includes mail parser error handling and runs on Heroku.",
-      "technologies": ["JavaScript", "Axios", "CRON", "Express", "Heroku", "Contentful"],
-      "image": "/images/projects/instagram-uploader.png",
-      "github": "https://github.com/yourusername/instagram-uploader",
-      "demo": ""
+      "title": "KanBan Style Task Manager",
+      "description": "KanBan style task manager built with React, TypeScript, and Tailwind CSS. It allows you to create, edit, and delete tasks, and move them between columns.",
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "React Router"],
+      "image": "/images/projects/kanban-style-to-do-list.png",
+      "github": "https://github.com/yourusername/kanban-style-to-do-list",
+      "demo": "https://kanban-style-to-do-list.netlify.app/"
     },
     {
       "title": "Bible Reader Web App",
@@ -16,6 +16,14 @@
       "image": "/images/projects/bible-reader.jpg",
       "github": "https://github.com/yourusername/bible-reader",
       "demo": "https://biblereader.netlify.app/"
+    },
+    {
+      "title": "Instagram Uploader",
+      "description": "JavaScript app that uses Contentful's API to schedule Instagram uploads via CRON. Includes mail parser error handling and runs on Heroku.",
+      "technologies": ["JavaScript", "Axios", "CRON", "Express", "Heroku", "Contentful"],
+      "image": "/images/projects/instagram-uploader.png",
+      "github": "https://github.com/yourusername/instagram-uploader",
+      "demo": ""
     },
     {
       "title": "Roll the Dice App",
